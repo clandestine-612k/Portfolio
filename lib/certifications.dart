@@ -11,7 +11,7 @@ class MyCertifications extends StatefulWidget {
 class _MyCertificationsState extends State<MyCertifications> {
   myCertcar(certname, desc, timedur, image) {
     return Container(
-      height: 400,
+      height: 420,
       width: MediaQuery.of(context).size.width * 0.9,
       child: Card(
         color: Color(0xff262628),
@@ -93,13 +93,13 @@ class _MyCertificationsState extends State<MyCertifications> {
                   "assets/fundamentals of kubernetes and dockernet scalar.png"),
               myCertcar(
                   'Introduction to JSONPowerDB -V2.0',
-                  'JSONPowerDB beginner Programme by Login@Xplore',
+                  'JSONPowerDB beginner Programme by Login2Xplore',
                   "9 October, 2023",
                   "assets/jsonpowerdb.png"),
               myCertcar(
                   'Introduction to Cybersecurity',
                   'Introduction to Cybersecurity by Cisco',
-                  "9 October, 2023",
+                  "3 August, 2023",
                   "assets/cybersecurity.png"),
               myCertcar(
                   'Development of Digital Game based eContent',

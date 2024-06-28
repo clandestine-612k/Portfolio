@@ -12,7 +12,7 @@ class Myprojects extends StatefulWidget {
 class _MyprojectsState extends State<Myprojects> {
   myprojectcar(tech, title, desc, star, link) {
     return Container(
-      height: 250,
+      height: 280,
       width: MediaQuery.of(context).size.width * 0.9,
       child: Card(
         color: Color(0xff262628),
