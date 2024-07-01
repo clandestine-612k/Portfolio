@@ -12,22 +12,25 @@ class _MyAchievementsState extends State<MyAchievements> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            Icon(
-              Icons.star,
-              color: Colors.amber,
-            ),
-            SizedBox(width: 10),
-            Text(
-              title,
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 16,
-                color: Colors.white,
+        FittedBox(
+          fit: BoxFit.fitWidth,
+          child: Row(
+            children: [
+              Icon(
+                Icons.star,
+                color: Colors.amber,
               ),
-            ),
-          ],
+              SizedBox(width: 10),
+              Text(
+                title,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
         ),
         Padding(
           padding: const EdgeInsets.only(left: 35.0, top: 5),
@@ -78,7 +81,7 @@ class _MyAchievementsState extends State<MyAchievements> {
             achievement(
                 "Qualified JEE MAINS 2019", "Got a rank in some ten thousands"),
             achievement("Qualified WBJEE 2020", "Got a rank below 5000"),
-            achievement("Qualified CTET paper 1 and \npaper 2 2023",
+            achievement("Qualified CTET paper 1 and paper 2 2023",
                 "Scored 120+ in both the papers"),
             achievement("Qualified WBTET 2023", "Scored 90+"),
           ],

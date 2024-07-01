@@ -10,51 +10,54 @@ class MyCertifications extends StatefulWidget {
 
 class _MyCertificationsState extends State<MyCertifications> {
   myCertcar(certname, desc, timedur, image) {
-    return Container(
-      height: 420,
-      width: MediaQuery.of(context).size.width * 0.9,
-      child: Card(
-        color: Color(0xff262628),
-        child: Container(
-          margin: EdgeInsets.only(left: 20, right: 20, top: 30),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                height: 180,
-                child: Image.asset(image),
-              ),
-              Text(
-                certname,
-                style: TextStyle(
+    return FittedBox(
+      fit: BoxFit.fitHeight,
+      child: Container(
+        //height: 420,
+        width: MediaQuery.of(context).size.width * 0.9,
+        child: Card(
+          color: Color(0xff262628),
+          child: Container(
+            margin: EdgeInsets.only(left: 20, right: 20, top: 30),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  height: 180,
+                  child: Image.asset(image),
+                ),
+                Text(
+                  certname,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Text(
+                  desc,
+                  style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Text(
-                desc,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 14,
+                    fontSize: 14,
+                  ),
                 ),
-              ),
-              SizedBox(
-                height: 5,
-              ),
-              Text(
-                timedur,
-                style: TextStyle(
-                  color: Colors.white70,
-                  fontSize: 12,
+                SizedBox(
+                  height: 5,
                 ),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-            ],
+                Text(
+                  timedur,
+                  style: TextStyle(
+                    color: Colors.white70,
+                    fontSize: 12,
+                  ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+              ],
+            ),
           ),
         ),
       ),

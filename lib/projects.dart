@@ -11,71 +11,74 @@ class Myprojects extends StatefulWidget {
 
 class _MyprojectsState extends State<Myprojects> {
   myprojectcar(tech, title, desc, star, link) {
-    return Container(
-      height: 280,
-      width: MediaQuery.of(context).size.width * 0.9,
-      child: Card(
-        color: Color(0xff262628),
-        child: Container(
-          margin: EdgeInsets.only(left: 20, right: 20, top: 30),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                tech,
-                style: TextStyle(color: Colors.white, fontSize: 18),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Text(
-                title,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold),
-              ),
-              SizedBox(
-                height: 5,
-              ),
-              Text(
-                desc,
-                style: TextStyle(
-                  color: Colors.white70,
-                  fontSize: 16,
+    return FittedBox(
+      fit: BoxFit.fitHeight,
+      child: Container(
+        //height: 300,
+        width: MediaQuery.of(context).size.width * 0.9,
+        child: Card(
+          color: Color(0xff262628),
+          child: Container(
+            margin: EdgeInsets.only(left: 20, right: 20, top: 30),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  tech,
+                  style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Row(
-                children: [
-                  Icon(
-                    Icons.star,
+                SizedBox(
+                  height: 15,
+                ),
+                Text(
+                  title,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  desc,
+                  style: TextStyle(
                     color: Colors.white70,
+                    fontSize: 16,
                   ),
-                  SizedBox(
-                    height: 4,
-                  ),
-                  Text(
-                    star,
-                    style: TextStyle(color: Colors.white70),
-                  ),
-                  Expanded(child: Container()),
-                  IconButton(
-                    onPressed: () async {
-                      if (await canLaunch(link)) {
-                        await launch(link);
-                      } else {
-                        throw 'Could not launch $link';
-                      }
-                    },
-                    icon: Icon(FontAwesomeIcons.github),
-                    color: Colors.white70,
-                  )
-                ],
-              )
-            ],
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.star,
+                      color: Colors.white70,
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      star,
+                      style: TextStyle(color: Colors.white70),
+                    ),
+                    Expanded(child: Container()),
+                    IconButton(
+                      onPressed: () async {
+                        if (await canLaunch(link)) {
+                          await launch(link);
+                        } else {
+                          throw 'Could not launch $link';
+                        }
+                      },
+                      icon: Icon(FontAwesomeIcons.github),
+                      color: Colors.white70,
+                    )
+                  ],
+                )
+              ],
+            ),
           ),
         ),
       ),

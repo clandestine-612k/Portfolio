@@ -42,61 +42,65 @@ class _MyEducationState extends State<MyEducation> {
                 ),
                 onPressed: () {
                   final snackBar = SnackBar(
-                    content: Container(
-                      height: 150,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            clgname,
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Text(
-                            degree,
-                            style: TextStyle(color: Colors.white, fontSize: 14),
-                          ),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          Text(
-                            timedur,
-                            style: TextStyle(
-                              color: Colors.white70,
-                              fontSize: 12,
+                    content: FittedBox(
+                      fit: BoxFit.contain,
+                      child: Container(
+                        // height: 150,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              clgname,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
                             ),
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Row(
-                            children: [
-                              Icon(
-                                Icons.star,
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Text(
+                              degree,
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 14),
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              timedur,
+                              style: TextStyle(
                                 color: Colors.white70,
+                                fontSize: 12,
                               ),
-                              SizedBox(
-                                height: 4,
-                              ),
-                              Text(
-                                ' CGPA / Percentage - ',
-                                style: TextStyle(color: Colors.white70),
-                              ),
-                              SizedBox(
-                                height: 4,
-                              ),
-                              Text(
-                                cgpa,
-                                style: TextStyle(color: Colors.white70),
-                              ),
-                            ],
-                          )
-                        ],
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.white70,
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  ' CGPA / Percentage - ',
+                                  style: TextStyle(color: Colors.white70),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  cgpa,
+                                  style: TextStyle(color: Colors.white70),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     action: SnackBarAction(
