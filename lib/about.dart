@@ -22,20 +22,20 @@ class _MyAboutState extends State<MyAbout> {
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_ios_new_outlined,
               color: Colors.white,
             )),
       ),
       body: Container(
-        margin: EdgeInsets.only(top: 60),
+        margin: const EdgeInsets.only(top: 60),
         child: Stack(
           children: [
             Container(
-              margin: EdgeInsets.only(left: 45),
+              margin: const EdgeInsets.only(left: 45),
               child: ShaderMask(
                   shaderCallback: (rect) {
-                    return LinearGradient(
+                    return const LinearGradient(
                             begin: Alignment.center,
                             end: Alignment.bottomCenter,
                             colors: [Colors.black, Colors.transparent])
@@ -55,28 +55,28 @@ class _MyAboutState extends State<MyAbout> {
                   top: MediaQuery.of(context).size.height * 0.44),
               child: Column(
                 children: [
-                  Text(
+                  const Text(
                     'Hello, I am',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,
                     ),
                   ),
-                  Text(
+                  const Text(
                     'Bandana Shaw',
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 40,
                         fontWeight: FontWeight.bold),
                   ),
-                  Text(
+                  const Text(
                     'Flutter developer',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 20,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 25,
                   ),
                   SizedBox(
@@ -100,11 +100,11 @@ class _MyAboutState extends State<MyAbout> {
                         style: TextButton.styleFrom(
                             backgroundColor: Colors.white,
                             foregroundColor: Colors.black),
-                        child: Text(
+                        child: const Text(
                           'Hire Me',
                         )),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   Row(
@@ -120,7 +120,7 @@ class _MyAboutState extends State<MyAbout> {
                               throw 'Could not launch $url';
                             }
                           },
-                          icon: Icon(
+                          icon: const Icon(
                             FontAwesomeIcons.instagram,
                             color: Colors.white,
                           )),
@@ -134,7 +134,7 @@ class _MyAboutState extends State<MyAbout> {
                               throw 'Could not launch $url';
                             }
                           },
-                          icon: Icon(
+                          icon: const Icon(
                             FontAwesomeIcons.linkedin,
                             color: Colors.white,
                           )),
@@ -147,7 +147,7 @@ class _MyAboutState extends State<MyAbout> {
                               throw 'Could not launch $url';
                             }
                           },
-                          icon: Icon(
+                          icon: const Icon(
                             FontAwesomeIcons.github,
                             color: Colors.white,
                           )),
@@ -161,7 +161,7 @@ class _MyAboutState extends State<MyAbout> {
                               throw 'Could not launch $phoneNumber';
                             }
                           },
-                          icon: Icon(
+                          icon: const Icon(
                             FontAwesomeIcons.phone,
                             color: Colors.white,
                           )),
@@ -182,7 +182,7 @@ class _MyAboutState extends State<MyAbout> {
                               throw 'Could not launch $emailLaunchUri';
                             }
                           },
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.mail,
                             color: Colors.white,
                           )),
@@ -196,7 +196,7 @@ class _MyAboutState extends State<MyAbout> {
                             throw 'Could not launch $phoneNumber';
                           }
                         },
-                        icon: Icon(
+                        icon: const Icon(
                           FontAwesomeIcons.whatsapp,
                           color: Colors.green, // WhatsApp color
                         ),

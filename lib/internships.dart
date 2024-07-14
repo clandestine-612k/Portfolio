@@ -14,7 +14,8 @@ class _MyInternshipsState extends State<MyInternships> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text(role, style: TextStyle(fontWeight: FontWeight.bold)),
+          title:
+              Text(role, style: const TextStyle(fontWeight: FontWeight.bold)),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,18 +25,18 @@ class _MyInternshipsState extends State<MyInternships> {
                   image,
                   height: 100,
                 ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text(companyName, style: TextStyle(fontWeight: FontWeight.bold)),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text(description),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text('Date: $date',
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+                  style: const TextStyle(fontWeight: FontWeight.bold)),
             ],
           ),
           actions: <Widget>[
             TextButton(
-              child: Text('Close'),
+              child: const Text('Close'),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -59,7 +60,7 @@ class _MyInternshipsState extends State<MyInternships> {
             color: Colors.grey[850],
             borderRadius: BorderRadius.circular(10),
           ),
-          margin: EdgeInsets.all(8.0),
+          margin: const EdgeInsets.all(8.0),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -67,13 +68,13 @@ class _MyInternshipsState extends State<MyInternships> {
                 Text(
                   role,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
@@ -98,17 +99,17 @@ class _MyInternshipsState extends State<MyInternships> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Color(0xff252525),
+        backgroundColor: const Color(0xff252525),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_outlined,
             color: Colors.white,
           ),
         ),
-        title: Text(
+        title: const Text(
           'Internships',
           style: TextStyle(color: Colors.white),
         ),

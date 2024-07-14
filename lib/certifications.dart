@@ -16,9 +16,9 @@ class _MyCertificationsState extends State<MyCertifications> {
         //height: 420,
         width: MediaQuery.of(context).size.width * 0.9,
         child: Card(
-          color: Color(0xff262628),
+          color: const Color(0xff262628),
           child: Container(
-            margin: EdgeInsets.only(left: 20, right: 20, top: 30),
+            margin: const EdgeInsets.only(left: 20, right: 20, top: 30),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -28,32 +28,32 @@ class _MyCertificationsState extends State<MyCertifications> {
                 ),
                 Text(
                   certname,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.white,
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Text(
                   desc,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 14,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   timedur,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white70,
                     fontSize: 12,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
               ],
@@ -69,16 +69,16 @@ class _MyCertificationsState extends State<MyCertifications> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Color(0xff252525),
+        backgroundColor: const Color(0xff252525),
         leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_ios_new_outlined,
               color: Colors.white,
             )),
-        title: Text(
+        title: const Text(
           'Certifications and Trainings ',
           style: TextStyle(color: Colors.white),
         ),

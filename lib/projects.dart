@@ -17,46 +17,46 @@ class _MyprojectsState extends State<Myprojects> {
         //height: 300,
         width: MediaQuery.of(context).size.width * 0.9,
         child: Card(
-          color: Color(0xff262628),
+          color: const Color(0xff262628),
           child: Container(
-            margin: EdgeInsets.only(left: 20, right: 20, top: 30),
+            margin: const EdgeInsets.only(left: 20, right: 20, top: 30),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   tech,
-                  style: TextStyle(color: Colors.white, fontSize: 18),
+                  style: const TextStyle(color: Colors.white, fontSize: 18),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Text(
                   title,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.white,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   desc,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white70,
                     fontSize: 16,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.star,
                       color: Colors.white70,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -72,7 +72,7 @@ class _MyprojectsState extends State<Myprojects> {
                           throw 'Could not launch $link';
                         }
                       },
-                      icon: Icon(FontAwesomeIcons.github),
+                      icon: const Icon(FontAwesomeIcons.github),
                       color: Colors.white70,
                     )
                   ],
@@ -90,16 +90,16 @@ class _MyprojectsState extends State<Myprojects> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Color(0xff252525),
+        backgroundColor: const Color(0xff252525),
         leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_ios_new_outlined,
               color: Colors.white,
             )),
-        title: Text(
+        title: const Text(
           'Projects',
           style: TextStyle(color: Colors.white),
         ),

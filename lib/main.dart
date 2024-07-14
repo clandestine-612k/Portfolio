@@ -14,14 +14,14 @@ void main() {
       initialRoute: "home",
       debugShowCheckedModeBanner: false,
       routes: {
-        "home": (context) => Myhome(),
-        "about": (context) => MyAbout(),
-        "projects": (context) => Myprojects(),
-        "education": (context) => MyEducation(),
-        "cert": (context) => MyCertifications(),
-        "internships": (context) => MyInternships(),
-        "achievements": (context) => MyAchievements(),
-        "miscellneous": (context) => MiscellaneousPage(),
+        "home": (context) => const Myhome(),
+        "about": (context) => const MyAbout(),
+        "projects": (context) => const Myprojects(),
+        "education": (context) => const MyEducation(),
+        "cert": (context) => const MyCertifications(),
+        "internships": (context) => const MyInternships(),
+        "achievements": (context) => const MyAchievements(),
+        "miscellneous": (context) => const MiscellaneousPage(),
         "/contactform": (context) => ContactFormPage(),
       }));
 }

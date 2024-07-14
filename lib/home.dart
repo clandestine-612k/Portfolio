@@ -15,7 +15,7 @@ class _MyhomeState extends State<Myhome> {
       children: [
         Text(
           numi,
-          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
         ),
         Container(
           margin: const EdgeInsets.only(top: 10),
@@ -32,8 +32,8 @@ class _MyhomeState extends State<Myhome> {
       width: 105,
       height: 115,
       child: Card(
-        margin: EdgeInsets.all(0),
-        color: Color(0xff252525),
+        margin: const EdgeInsets.all(0),
+        color: const Color(0xff252525),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),
@@ -45,12 +45,12 @@ class _MyhomeState extends State<Myhome> {
                 icon,
                 color: Colors.white,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Text(
                 tech,
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
               ),
             ],
           ),
@@ -67,7 +67,7 @@ class _MyhomeState extends State<Myhome> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        iconTheme: IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       drawer: Drawer(
         child: Container(
@@ -75,7 +75,7 @@ class _MyhomeState extends State<Myhome> {
           child: ListView(
             padding: EdgeInsets.zero,
             children: [
-              DrawerHeader(
+              const DrawerHeader(
                 decoration: BoxDecoration(
                   color: Colors.black,
                 ),
@@ -88,25 +88,27 @@ class _MyhomeState extends State<Myhome> {
                 ),
               ),
               ListTile(
-                leading: Icon(Icons.work, color: Colors.white),
-                title: Text('Projects', style: TextStyle(color: Colors.white)),
+                leading: const Icon(Icons.work, color: Colors.white),
+                title: const Text('Projects',
+                    style: TextStyle(color: Colors.white)),
                 onTap: () {
                   // Handle the onTap
                   Navigator.pushNamed(context, 'projects');
                 },
               ),
               ListTile(
-                leading: Icon(Icons.book, color: Colors.white),
-                title: Text('Education', style: TextStyle(color: Colors.white)),
+                leading: const Icon(Icons.book, color: Colors.white),
+                title: const Text('Education',
+                    style: TextStyle(color: Colors.white)),
                 onTap: () {
                   // Handle the onTap
                   Navigator.pushNamed(context, "education");
                 },
               ),
               ListTile(
-                leading:
-                    Icon((FontAwesomeIcons.certificate), color: Colors.white),
-                title: Text('Certifications and Trainings',
+                leading: const Icon((FontAwesomeIcons.certificate),
+                    color: Colors.white),
+                title: const Text('Certifications and Trainings',
                     style: TextStyle(color: Colors.white)),
                 onTap: () {
                   // Handle the onTap
@@ -114,26 +116,26 @@ class _MyhomeState extends State<Myhome> {
                 },
               ),
               ListTile(
-                leading: Icon(Icons.note, color: Colors.white),
-                title:
-                    Text('Internships', style: TextStyle(color: Colors.white)),
+                leading: const Icon(Icons.note, color: Colors.white),
+                title: const Text('Internships',
+                    style: TextStyle(color: Colors.white)),
                 onTap: () {
                   // Handle the onTap
                   Navigator.pushNamed(context, "internships");
                 },
               ),
               ListTile(
-                leading: Icon(Icons.star_border, color: Colors.white),
-                title:
-                    Text('Achievements', style: TextStyle(color: Colors.white)),
+                leading: const Icon(Icons.star_border, color: Colors.white),
+                title: const Text('Achievements',
+                    style: TextStyle(color: Colors.white)),
                 onTap: () {
                   // Handle the onTap
                   Navigator.pushNamed(context, 'achievements');
                 },
               ),
               ListTile(
-                leading: Icon(Icons.functions, color: Colors.white),
-                title: Text('Miscellaneous',
+                leading: const Icon(Icons.functions, color: Colors.white),
+                title: const Text('Miscellaneous',
                     style: TextStyle(color: Colors.white)),
                 onTap: () {
                   // Handle the onTap
@@ -153,7 +155,6 @@ class _MyhomeState extends State<Myhome> {
                 leading: Icon(Icons.person, color: Colors.white),
                 title: Text('About Me', style: TextStyle(color: Colors.white)),
                 onTap: () {
-                  // Handle the onTap
                   Navigator.pushNamed(context, "about");
                 },
               ),
@@ -173,10 +174,10 @@ class _MyhomeState extends State<Myhome> {
           child: Stack(
             children: [
               Container(
-                margin: EdgeInsets.only(left: 45),
+                margin: const EdgeInsets.only(left: 45),
                 child: ShaderMask(
                   shaderCallback: (rect) {
-                    return LinearGradient(
+                    return const LinearGradient(
                       begin: Alignment.center,
                       end: Alignment.bottomCenter,
                       colors: [Colors.black, Colors.transparent],
@@ -196,7 +197,7 @@ class _MyhomeState extends State<Myhome> {
                 margin: EdgeInsets.only(
                   top: MediaQuery.of(context).size.height * 0.49,
                 ),
-                child: Column(
+                child: const Column(
                   children: [
                     Text(
                       'Bandana Shaw',
@@ -222,7 +223,7 @@ class _MyhomeState extends State<Myhome> {
         ),
         builder: (context, state) {
           return Container(
-            margin: EdgeInsets.only(left: 20, right: 20, top: 20),
+            margin: const EdgeInsets.only(left: 20, right: 20, top: 20),
             height: 500,
             child: Center(
               child: Column(
@@ -236,14 +237,14 @@ class _MyhomeState extends State<Myhome> {
                       myArchie('6', ' Internships')
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 3,
                   ),
-                  Text(
+                  const Text(
                     'Specialized In',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Column(
@@ -256,7 +257,7 @@ class _MyhomeState extends State<Myhome> {
                           cardwid(FontAwesomeIcons.c, 'C++'),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Row(
@@ -267,7 +268,7 @@ class _MyhomeState extends State<Myhome> {
                           cardwid(Icons.html_outlined, 'HTML'),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Row(

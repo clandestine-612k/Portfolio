@@ -16,14 +16,14 @@ class _MyAchievementsState extends State<MyAchievements> {
           fit: BoxFit.fitWidth,
           child: Row(
             children: [
-              Icon(
+              const Icon(
                 Icons.star,
                 color: Colors.amber,
               ),
-              SizedBox(width: 10),
+              const SizedBox(width: 10),
               Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 16,
                   color: Colors.white,
@@ -36,13 +36,13 @@ class _MyAchievementsState extends State<MyAchievements> {
           padding: const EdgeInsets.only(left: 35.0, top: 5),
           child: Text(
             description,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white70,
               fontSize: 14,
             ),
           ),
         ),
-        Divider(
+        const Divider(
           color: Colors.white54,
           thickness: 1,
           height: 20,
@@ -56,17 +56,17 @@ class _MyAchievementsState extends State<MyAchievements> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Color(0xff252525),
+        backgroundColor: const Color(0xff252525),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new_outlined,
             color: Colors.white,
           ),
         ),
-        title: Text(
+        title: const Text(
           'Achievements',
           style: TextStyle(color: Colors.white),
         ),
@@ -76,7 +76,7 @@ class _MyAchievementsState extends State<MyAchievements> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 40),
+            const SizedBox(height: 40),
             achievement("Nimcet AIR 811", "Scored 340 "),
             achievement(
                 "Qualified JEE MAINS 2019", "Got a rank in some ten thousands"),

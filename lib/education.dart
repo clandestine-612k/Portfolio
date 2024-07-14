@@ -12,7 +12,7 @@ class _MyEducationState extends State<MyEducation> {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        border: Border(
+        border: const Border(
           top: BorderSide(width: 1, color: Colors.white),
           bottom: BorderSide(width: 1, color: Colors.white),
         ),
@@ -27,7 +27,7 @@ class _MyEducationState extends State<MyEducation> {
             Text(
               updegree,
             ),
-            SizedBox(
+            const SizedBox(
               width: 20,
             ),
             Center(
@@ -51,51 +51,51 @@ class _MyEducationState extends State<MyEducation> {
                           children: [
                             Text(
                               clgname,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 15,
                             ),
                             Text(
                               degree,
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 14),
+                              style: const TextStyle(
+                                  color: Colors.white, fontSize: 14),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
                             Text(
                               timedur,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.white70,
                                 fontSize: 12,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 15,
                             ),
                             Row(
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.star,
                                   color: Colors.white70,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 4,
                                 ),
-                                Text(
+                                const Text(
                                   ' CGPA / Percentage - ',
                                   style: TextStyle(color: Colors.white70),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 4,
                                 ),
                                 Text(
                                   cgpa,
-                                  style: TextStyle(color: Colors.white70),
+                                  style: const TextStyle(color: Colors.white70),
                                 ),
                               ],
                             )
@@ -134,16 +134,16 @@ class _MyEducationState extends State<MyEducation> {
     return Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
-          backgroundColor: Color(0xff252525),
+          backgroundColor: const Color(0xff252525),
           leading: IconButton(
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.arrow_back_ios_new_outlined,
                 color: Colors.white,
               )),
-          title: Text(
+          title: const Text(
             'Education ',
             style: TextStyle(color: Colors.white),
           ),
@@ -153,14 +153,7 @@ class _MyEducationState extends State<MyEducation> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Text(
-              //   'Education ',
-              //   style: TextStyle(
-              //       color: Colors.white,
-              //       fontWeight: FontWeight.bold,
-              //       fontSize: 30),
-              // ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               myedu(
@@ -169,7 +162,7 @@ class _MyEducationState extends State<MyEducation> {
                   "MCA",
                   "August 2023 - Present ",
                   "9.5"),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               myedu(
@@ -178,12 +171,12 @@ class _MyEducationState extends State<MyEducation> {
                   "B.Sc. B.Ed.",
                   "August 2019 - June 2023 ",
                   "8.64"),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               myedu("Higher Secondary", "Jawahar Navodaya Vidyalaya, Banipur",
                   "XII", "2019", "90.8 %"),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               myedu("Secondary", "Jawahar Navodaya Vidyalaya, Banipur", "X",
