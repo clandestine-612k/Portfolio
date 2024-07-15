@@ -8,10 +8,11 @@ import 'package:portfolio/home.dart';
 import 'package:portfolio/internships.dart';
 import 'package:portfolio/miscellenaous.dart';
 import 'package:portfolio/projects.dart';
+import 'package:portfolio/splash_screen.dart';
 
 void main() {
   runApp(MaterialApp(
-      initialRoute: "home",
+      initialRoute: "splashscreen",
       debugShowCheckedModeBanner: false,
       routes: {
         "home": (context) => const Myhome(),
@@ -23,5 +24,6 @@ void main() {
         "achievements": (context) => const MyAchievements(),
         "miscellneous": (context) => const MiscellaneousPage(),
         "/contactform": (context) => ContactFormPage(),
+        "splashscreen": (context) => const SplashScreen()
       }));
 }
