@@ -112,6 +112,18 @@ class _MyprojectsState extends State<Myprojects> {
             children: [
               myprojectcar(
                   'FLUTTER',
+                  'Community_build',
+                  "An app to connect Alumni",
+                  '10',
+                  'https://github.com/clandestine-612k/community_build'),
+              myprojectcar(
+                  'MACHINE LEARNING',
+                  'Anemia Sense',
+                  "Leveraging Machine Learning for presice Anemia Detection",
+                  '10',
+                  'https://github.com/clandestine-612k/Anemia-Sense-Leveraging-Machine-Learning-For-Precise-Anemia-Recognitions'),
+              myprojectcar(
+                  'FLUTTER',
                   'Portfolio App',
                   "This is my Portfolio as an app",
                   '10',

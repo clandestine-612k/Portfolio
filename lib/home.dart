@@ -232,7 +232,7 @@ class _MyhomeState extends State<Myhome> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      myArchie('5', ' Projects'),
+                      myArchie('7', ' Projects'),
                       myArchie('5', ' Certifications'),
                       myArchie('6', ' Internships')
                     ],
