@@ -185,10 +185,12 @@ class _MyhomeState extends State<Myhome> {
                         Rect.fromLTRB(0, 0, rect.width, rect.height));
                   },
                   blendMode: BlendMode.dstIn,
-                  child: Image.asset(
-                    'assets/file1.png',
-                    height: 400,
-                    fit: BoxFit.contain,
+                  child: Center(
+                    child: Image.asset(
+                      'assets/file1.png',
+                      height: 400,
+                      fit: BoxFit.contain,
+                    ),
                   ),
                 ),
               ),
